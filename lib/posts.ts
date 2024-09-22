@@ -29,6 +29,7 @@ export type Post = {
       return null
     }
   }
+  
 
   export async function getPosts(limit?: number): Promise<PostMetadata[]> {
     const files = fs.readdirSync(rootDirectory)
