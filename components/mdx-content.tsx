@@ -4,6 +4,7 @@ import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 
 import Counter from '@/components/counter'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Code({ children, ...props }: any) {
   const codeHTML = highlight(children)
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
